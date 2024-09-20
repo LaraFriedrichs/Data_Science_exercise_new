@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly
 
 st.title('Data Science Short Course')
 st.write('*This is a test for a streamlit App*')
