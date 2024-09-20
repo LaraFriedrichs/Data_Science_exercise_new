@@ -5,14 +5,14 @@ import plotly
 
 st.title('Data Science Short Course')
 st.write('*This is a test for a streamlit App*')
+filenames =['Banda Arc.csv']
+file= st.selectbox('Which data do you want to use?',options=filenames)
 
-df = pd.read_csv("data/Banda Arc.csv")
+df = pd.read_csv(f"data/{file}")
 
 cat_names = df.columns.tolist()[27:]
 
 #st.write(cat_names)
-
-st.multiselect('Chose coloumns',options=cat_names)
 
 col1,col2 = st.columns(2)
 
