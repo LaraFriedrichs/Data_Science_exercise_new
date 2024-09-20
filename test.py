@@ -5,7 +5,8 @@ import plotly
 
 st.title('Data Science Short Course')
 st.write('*This is a test for a streamlit App*')
-filenames =['Banda Arc.csv']
+filenames =['Banda Arc.csv','Bastar Craton.csv']
+
 file= st.selectbox('Which data do you want to use?',options=filenames)
 
 df = pd.read_csv(f"data/{file}")
